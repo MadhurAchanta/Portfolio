@@ -19,7 +19,7 @@ const Home = () => {
                 transition={{ duration: 0.8 }}
               >
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-                  Tech entrepreneur and AI enthusiast.
+                  Aspiring entrepreneur and AI enthusiast.
                 </h1>
                 <p className="mt-4 sm:mt-6 text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl lg:max-w-none mx-auto lg:mx-0">
                   I'm Madhur Achanta, a B.Tech CSE student passionate about empowering
