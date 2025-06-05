@@ -30,6 +30,7 @@ function App() {
           </Routes>
         </main>
         <SimpleFooter />
+        <Analytics/>
         <SpeedInsights/>
       </div>
       
