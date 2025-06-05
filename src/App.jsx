@@ -30,8 +30,9 @@ function App() {
           </Routes>
         </main>
         <SimpleFooter />
+        <SpeedInsights/>
       </div>
-      <SpeedInsights/>
+      
     </ThemeProvider>
   );
 }
