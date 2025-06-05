@@ -31,6 +31,7 @@ function App() {
         </main>
         <SimpleFooter />
       </div>
+       <Analytics /> 
     </ThemeProvider>
   );
 }
