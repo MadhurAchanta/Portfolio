@@ -12,6 +12,7 @@ import Experience from "./pages/Experience";
 import Workshops from "./pages/Workshops";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Certifications from "./pages/Certifications"; // ✅ ADD THIS LINE
 
 function App() {
   return (
@@ -25,12 +26,13 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/workshops" element={<Workshops />} />
+            <Route path="/certifications" element={<Certifications />} /> {/* ✅ ADD THIS ROUTE */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
         <SimpleFooter />
-        <SpeedInsights/>
+        <SpeedInsights />
       </div>
     </ThemeProvider>
   );

@@ -20,7 +20,7 @@ const NavLink = ({ children, ...props }) => {
   return (
     <Link
       className={`text-sm leading-6 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white ${
-        isActive ? 'border-b-2 border-zinc-900 dark:border-zinc-100' : ''
+        isActive ? "border-b-2 border-zinc-900 dark:border-zinc-100" : ""
       }`}
       {...props}
     >
@@ -31,7 +31,6 @@ const NavLink = ({ children, ...props }) => {
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
@@ -46,15 +45,15 @@ const Navbar = () => {
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
     { name: "Experience", path: "/experience" },
+    { name: "Certifications", path: "/certifications" }, 
     { name: "Contact", path: "/contact" },
+     
   ];
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 ${
-        isScrolled
-          ? "bg-white/75 dark:bg-black/75"
-          : "bg-white/0 dark:bg-black/0"
+        isScrolled ? "bg-white/75 dark:bg-black/75" : "bg-white/0 dark:bg-black/0"
       }`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Global">
@@ -97,7 +96,9 @@ const Navbar = () => {
                 {link.name}
               </NavLink>
             ))}
-          </div>          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6 items-center">
+          </div>
+
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6 items-center">
             <ThemeToggle />
             <NavLink to="/resume" className="font-semibold hover:underline">
               Resume
@@ -155,7 +156,8 @@ const Navbar = () => {
                         {link.name}
                       </MobileNavLink>
                     </li>
-                  ))}                  <li className="mt-4 pt-4">
+                  ))}
+                  <li className="mt-4 pt-4">
                     <MobileNavLink
                       to="/resume"
                       onClick={() => setMobileNavOpen(false)}

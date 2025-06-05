@@ -141,13 +141,7 @@ const About = () => {
               <li className="flex gap-4">
                 <div className="flex-auto">
                   <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">NISM Certification: SEBI Certified Investor</h3>
-                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Score: 44/50</p>
-                </div>
-              </li>
-              <li className="flex gap-4">
-                <div className="flex-auto">
-                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Excel Bootcamp & British Council Training</h3>
-                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">NumPy, Pandas (NSDC & ITM) + English & Career Strokes</p>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Understanding of securities market operations and investor protection</p>
                 </div>
               </li>
               <li className="flex gap-4">
@@ -156,46 +150,63 @@ const About = () => {
                   <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Automated YouTube Video Summarizer (LLaMA-3) at Springer CSEAi 2024</p>
                 </div>
               </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Cloud Computing – NPTEL</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Fundamentals of cloud infrastructure and deployment models</p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Introduction to Internet of Things – NPTEL</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Explored IoT architecture, protocols, and applications</p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Excel Bootcamp & British Council Training</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">NumPy, Pandas (NSDC & ITM) + English & Career Strokes</p>
+                </div>
+              </li>
             </ul>
           </div>
 
-                        {/* Right Column - Achievements */}
-              <div className="lg:order-6">
-                <SectionHeading>Achievements</SectionHeading>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex gap-4">
-                    <div className="flex-auto">
-                      <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">GeeksforGeeks Achievement</h3>
-                      <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Solved 730+ problems with a 170+ day streak in Java/C++.</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <div className="flex-auto">
-                      <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Startup Ideation</h3>
-                      <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">3rd place among 12 teams for pitching a P2P lending idea.</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <div className="flex-auto">
-                      <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Workshop Speaker</h3>
-                      <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Taught business metrics to 60+ MBA final-year students.</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <div className="flex-auto">
-                      <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Debate Winner</h3>
-                      <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Won a college debate on drug de-addiction among 50 peers.</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <div className="flex-auto">
-                      <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Academic Excellence</h3>
-                      <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Secured 2nd rank in +2 with 974/1000 marks.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
+          {/* Right Column - Achievements */}
+          <div className="lg:order-6">
+            <SectionHeading>Achievements</SectionHeading>
+            <ul className="mt-6 space-y-4">
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">GeeksforGeeks Achievement</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Solved 730+ problems with a 170+ day streak in Java/C++.</p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Startup Ideation</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">3rd place among 12 teams for pitching a P2P lending idea.</p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Workshop Speaker</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Taught business metrics to 60+ MBA final-year students.</p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Debate Winner</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Won a college debate on drug de-addiction among 50 peers.</p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="flex-auto">
+                  <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Academic Excellence</h3>
+                  <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">Secured 2nd rank in +2 with 974/1000 marks.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </motion.div>
       </div>
     </div>
