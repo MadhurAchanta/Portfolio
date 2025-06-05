@@ -15,7 +15,8 @@ import Resume from "./pages/Resume";
 
 function App() {
   return (
-    <ThemeProvider>      
+    <ThemeProvider>    
+      <div>  
       <div className="min-h-screen flex flex-col bg-white dark:bg-black">
         <Navbar />
         <main className="flex-1 pt-[64px] overflow-x-hidden">
@@ -33,7 +34,7 @@ function App() {
         <Analytics/>
         <SpeedInsights/>
       </div>
-      
+      </div>
     </ThemeProvider>
   );
 }
