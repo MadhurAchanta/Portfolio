@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://madhur-achanta.vercel.app/sitemap.xml
