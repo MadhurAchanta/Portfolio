@@ -1,7 +1,7 @@
-// src/pages/Projects.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { projYouTube, projAlarmify, projEcg, projSkin } from "../assets/images";
+import { Helmet } from "react-helmet";
 
 const ProjectCard = ({ project, index }) => {
   return (
@@ -15,7 +15,7 @@ const ProjectCard = ({ project, index }) => {
         <div className="aspect-[16/9] relative">
           <img
             src={project.image}
-            alt={project.title}
+            alt={`Project preview of ${project.title}`}
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/50 to-zinc-900/0" />
@@ -93,35 +93,64 @@ const Projects = () => {
     },
   ];
 
-  return (    <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
-      <div className="mx-auto max-w-2xl lg:max-w-none">
-        <div className="space-y-12">
-          <div>
-            <motion.h2
-              className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              Things I've made
-            </motion.h2>
-            <motion.p
-              className="mt-4 text-zinc-600 dark:text-zinc-400"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
-              I love building things. Here are some of my favorite projects that
-              showcase my expertise in AI, web development, and mobile applications.
-            </motion.p>
-          </div>          <div className="grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {projectList.map((project, index) => (
-              <ProjectCard key={project.title} project={project} index={index} />
-            ))}
+  return (
+    <>
+      <Helmet>
+        <title>Madhur Achanta | Projects in AI, React & Healthcare</title>
+        <meta
+          name="description"
+          content="Explore AI, mobile, and web projects by Madhur Achanta including YouTube Summarizer, Alarmify, ECG Classification, and CNN-based Cancer Detection."
+        />
+        <meta
+          name="keywords"
+          content="Madhur Achanta, AI projects, React Native, Flask, YouTube summarizer, ECG CNN, portfolio projects"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Madhur Achanta | Featured Projects" />
+        <meta
+          property="og:description"
+          content="AI & healthcare projects by Madhur Achanta including CNNs, React apps, and NLP systems."
+        />
+        <meta
+          property="og:image"
+          content="https://madhur-achanta.vercel.app/static/media/profile.png"
+        />
+        <meta property="og:url" content="https://madhur-achanta.vercel.app/projects" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
+        <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="space-y-12">
+            <div>
+              <motion.h2
+                className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                Things I've made
+              </motion.h2>
+              <motion.p
+                className="mt-4 text-zinc-600 dark:text-zinc-400"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+              >
+                I love building things. Here are some of my favorite projects that
+                showcase my expertise in AI, web development, and mobile applications.
+              </motion.p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {projectList.map((project, index) => (
+                <ProjectCard key={project.title} project={project} index={index} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

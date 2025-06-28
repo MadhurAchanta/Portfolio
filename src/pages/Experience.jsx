@@ -1,6 +1,6 @@
-// src/pages/Experience.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Experience = () => {
   const experiences = [
@@ -33,62 +33,92 @@ const Experience = () => {
     },
   ];
 
-  return (    <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
-      <div className="mx-auto max-w-2xl lg:max-w-none">
-        <div className="space-y-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              Experience & Leadership
-            </h2>
-            <p className="mt-4 text-zinc-600 dark:text-zinc-400">
-              I've had the opportunity to lead various initiatives and contribute to
-              meaningful projects. Here's a look at my professional journey so far.
-            </p>
-          </motion.div>
+  return (
+    <>
+      <Helmet>
+        <title>Madhur Achanta | Experience & Leadership</title>
+        <meta
+          name="description"
+          content="Explore the leadership journey and event management experience of Madhur Achanta, including workshops, hackathons, and team leadership."
+        />
+        <meta
+          name="keywords"
+          content="Madhur Achanta, experience, leadership, event management, BBSC, workshop, hackathon, class representative"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Madhur Achanta | Experience & Leadership" />
+        <meta
+          property="og:description"
+          content="Get to know the leadership roles and impactful initiatives led by Madhur Achanta at BBSC and Sri Vasavi Engineering College."
+        />
+        <meta
+          property="og:image"
+          content="https://madhur-achanta.vercel.app/static/media/profile.png"
+        />
+        <meta
+          property="og:url"
+          content="https://madhur-achanta.vercel.app/experience"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
 
-          <div className="space-y-8">
-            {experiences.map((exp, idx) => (
-              <motion.div
-                key={idx}
-                className="group relative flex flex-col items-start border-l-2 border-zinc-200 dark:border-zinc-700 pl-6 pt-2"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: idx * 0.1, duration: 0.5 }}
-              >
-                <div className="absolute -left-[9px] top-[14px] h-4 w-4 rounded-full border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-black" />
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
+        <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="space-y-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+                Experience & Leadership
+              </h2>
+              <p className="mt-4 text-zinc-600 dark:text-zinc-400">
+                I've had the opportunity to lead various initiatives and contribute to
+                meaningful projects. Here's a look at my professional journey so far.
+              </p>
+            </motion.div>
 
-                <time className="text-sm text-zinc-500 dark:text-zinc-400">
-                  {exp.duration}
-                </time>
+            <div className="space-y-8">
+              {experiences.map((exp, idx) => (
+                <motion.div
+                  key={idx}
+                  className="group relative flex flex-col items-start border-l-2 border-zinc-200 dark:border-zinc-700 pl-6 pt-2"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.1, duration: 0.5 }}
+                >
+                  <div className="absolute -left-[9px] top-[14px] h-4 w-4 rounded-full border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-black" />
 
-                <h3 className="mt-2 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                  {exp.role}
-                </h3>
+                  <time className="text-sm text-zinc-500 dark:text-zinc-400">
+                    {exp.duration}
+                  </time>
 
-                <p className="mt-1 text-base font-medium text-zinc-600 dark:text-zinc-400">
-                  {exp.organization}
-                </p>
+                  <h3 className="mt-2 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                    {exp.role}
+                  </h3>
 
-                <ul className="mt-4 space-y-3">
-                  {exp.details.map((detail, i) => (
-                    <li
-                      key={i}
-                      className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"
-                    >
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+                  <p className="mt-1 text-base font-medium text-zinc-600 dark:text-zinc-400">
+                    {exp.organization}
+                  </p>
+
+                  <ul className="mt-4 space-y-3">
+                    {exp.details.map((detail, i) => (
+                      <li
+                        key={i}
+                        className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"
+                      >
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
