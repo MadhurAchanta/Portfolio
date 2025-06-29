@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Madhur Achanta | Software Engineer & Tech Enthusiast</title>
+        <title>Madhur Achanta</title>
         <meta
           name="description"
           content="Portfolio of Madhur Achanta — building AI, React, and business products. Explore projects, experience, and more."
