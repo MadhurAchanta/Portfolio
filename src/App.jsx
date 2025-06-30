@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react"
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import SimpleFooter from "./components/SimpleFooter";
+import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/ThemeProvider";
 
 import Home from "./pages/Home";
@@ -32,7 +32,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
-        <SimpleFooter />
+        <Footer/>
         <Analytics/>
         <SpeedInsights />
       </div>
