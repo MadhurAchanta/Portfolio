@@ -68,7 +68,7 @@ const Projects = () => {
     description:
       "An end-to-end agentic AI system that executes high-level natural language commands such as posting on LinkedIn, ordering items online, automating workflows, and performing multi-step tasks autonomously. Built using planning agents, LLM orchestration, and browser/API automation.",
     link: "#",
-    image: projAgentic, // <-- Add your image import for this
+    image: proAgentic, // <-- Add your image import for this
   },
   {
     title: "YouTube Summarizer (LLaMA-3)",
