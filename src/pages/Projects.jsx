@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { projYouTube, projAlarmify, projEcg, projSkin } from "../assets/images";
+import { projYouTube, projAlarmify, projEcg, projSkin, proAgentic } from "../assets/images";
 import { Helmet } from "react-helmet";
 
 const ProjectCard = ({ project, index }) => {
@@ -63,35 +63,42 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   const projectList = [
-    {
-      title: "YouTube Summarizer (LLaMA-3)",
-      description:
-        "Built an end-to-end NLP summarizer that processes any YouTube video in under 10 seconds. Deployed using Flask + React.",
-      link: "https://github.com/MadhurAchanta/Automated-YouTube-Video-Summarizer",
-      image: projYouTube,
-    },
-    {
-      title: "Alarmify – React Native Personal Assistant",
-      description:
-        "A mobile app for calendar-based scheduling, automated alarms, and push notifications. Implemented Notifications API and local storage.",
-      link: "https://github.com/MadhurAchanta/Alarmify",
-      image: projAlarmify,
-    },
-    {
-      title: "ECG Report Classification",
-      description:
-        "Developed a CNN that classifies ECG reports into normal vs abnormal with 90% validation accuracy.",
-      link: "#",
-      image: projEcg,
-    },
-    {
-      title: "Skin & Brain Cancer Detection (CNN)",
-      description:
-        "Trained and fine-tuned two separate CNNs for early skin and brain tumor detection using medical image datasets (2024).",
-      link: "#",
-      image: projSkin,
-    },
-  ];
+  {
+    title: "Agentic AI Automation System",
+    description:
+      "An end-to-end agentic AI system that executes high-level natural language commands such as posting on LinkedIn, ordering items online, automating workflows, and performing multi-step tasks autonomously. Built using planning agents, LLM orchestration, and browser/API automation.",
+    link: "#",
+    image: projAgentic, // <-- Add your image import for this
+  },
+  {
+    title: "YouTube Summarizer (LLaMA-3)",
+    description:
+      "Built an end-to-end NLP summarizer that processes any YouTube video in under 10 seconds. Deployed using Flask + React.",
+    link: "https://github.com/MadhurAchanta/Automated-YouTube-Video-Summarizer",
+    image: projYouTube,
+  },
+  {
+    title: "Alarmify – React Native Personal Assistant",
+    description:
+      "A mobile app for calendar-based scheduling, automated alarms, and push notifications. Implemented Notifications API and local storage.",
+    link: "https://github.com/MadhurAchanta/Alarmify",
+    image: projAlarmify,
+  },
+  {
+    title: "ECG Report Classification",
+    description:
+      "Developed a CNN that classifies ECG reports into normal vs abnormal with 90% validation accuracy.",
+    link: "#",
+    image: projEcg,
+  },
+  {
+    title: "Skin & Brain Cancer Detection (CNN)",
+    description:
+      "Trained and fine-tuned two separate CNNs for early skin and brain tumor detection using medical image datasets (2024).",
+    link: "#",
+    image: projSkin,
+  },
+];
 
   return (
     <>
