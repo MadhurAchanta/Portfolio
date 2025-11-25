@@ -66,7 +66,7 @@ const Projects = () => {
   {
     title: "Agentic AI Automation System",
     description:
-      "An end-to-end agentic AI system that executes high-level natural language commands such as posting on LinkedIn, ordering items online, automating workflows, and performing multi-step tasks autonomously. Built using planning agents, LLM orchestration, and browser/API automation.",
+      "An end-to-end agentic AI system that executes high-level natural language commands such as posting on LinkedIn, running campaigns on LinkedIn, automating workflows, and performing multi-step tasks autonomously. Built using planning agents, LLM orchestration, and browser/API automation.",
     link: "#",
     image: proAgentic, // <-- Add your image import for this
   },
