@@ -52,7 +52,7 @@ const Resume = () => {
               </p>
               <div className="mt-8">
                 <a
-                  href="/Madhur_Resume_2025.pdf"
+                  href="/Madhur_Achanta_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 justify-center rounded-lg bg-zinc-900 dark:bg-zinc-100 px-4 py-3 text-sm font-semibold text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-all"

@@ -85,16 +85,34 @@ const Certifications = () => {
               </a>
             </div>
 
-            {/* Research Paper Publication */}
+            {/* Mini Project Research Paper Publication */}
             <div className="rounded-2xl border border-zinc-100 dark:border-zinc-700/40 p-6 bg-white dark:bg-black shadow-sm">
               <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
-                Research Paper Publication
+                Mini Project: Research Paper Publication
               </h3>
               <p className="mt-3 text-base text-zinc-600 dark:text-zinc-400">
                 Published “Automated YouTube Video Summarizer (LLaMA-3)” at Springer CSEAi 2024 conference.
               </p>
               <a
                 href="/images/research-paper-publication.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Verify Certificate
+              </a>
+            </div>
+
+            {/* Major Project Paper Presentation */}
+            <div className="rounded-2xl border border-zinc-100 dark:border-zinc-700/40 p-6 bg-white dark:bg-black shadow-sm">
+              <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
+                Major Project: Research Paper Publication
+              </h3>
+              <p className="mt-3 text-base text-zinc-600 dark:text-zinc-400">
+                Presented major project findings and implementation details.
+              </p>
+              <a
+                href="/images/Major-Project-Paper-Presentation.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-blue-600 dark:text-blue-400 hover:underline"

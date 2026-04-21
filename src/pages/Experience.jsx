@@ -5,12 +5,23 @@ import { Helmet } from "react-helmet";
 const Experience = () => {
   const experiences = [
     {
+      role: "Founder's Office Intern",
+      organization: "Farmbowl",
+      duration: "Dec 2025 – Present",
+      details: [],
+    },
+    {
       role: "Head of Event Management",
       organization: "Blackbox Student Community (BBSC)",
       duration: "Oct 2024 – Present",
       details: [
-        "Led and organized multiple hackathons, debates, and workshops with 2000+ combined student attendance.",
-        'Coordinated logistics and promotional campaigns for "Algophoniex" at College Fest 2025.',
+        "Planned and executed 10+ events including hackathons, tech fest activities, farewell events, Engineers’ Day, and Teachers’ Day, engaging more than 1500 participants in total.",
+        "Played a key role in the college tech fest event management team, contributing to large-scale execution.",
+        "Managed participant registrations and attendance by coordinating with team and department HODs.",
+        "Secured permissions from management for venues, schedules, and event logistics.",
+        "Led and coordinated a team to ensure smooth execution and effective stakeholder communication.",
+        "Stepped in to deliver sessions and engage participants in case of speaker delays or absence.",
+        "Handled on-ground operations and resolved real-time issues to ensure a seamless event experience."
       ],
     },
     {
