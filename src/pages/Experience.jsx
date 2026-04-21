@@ -8,7 +8,15 @@ const Experience = () => {
       role: "Founder's Office Intern",
       organization: "Farmbowl",
       duration: "Dec 2025 – Present",
-      details: [],
+      details: [
+        "Strategized and implemented cost-control initiatives to reduce food cost by ~600 basis points, directly improving outlet-level profitability.",
+        "Developed and deployed an intelligent sales dashboard to track revenue and food cost across outlets, enabling data-driven decision-making for business performance optimization.",
+        "Automated Instagram DMs and comment workflows, reducing manual effort by ~99% and significantly improving response efficiency and lead handling.",
+        "Built and deployed an analytics dashboard for item-wise sales and outlet-wise volume comparison, providing visibility into category contribution and helping identify high- and low-performing items across stores.",
+        "Standardized data collection by designing structured templates, ensuring consistency and enabling faster, more reliable insight generation.",
+        "Conducted regular store audits to ensure compliance with hygiene standards and SOPs, maintaining operational quality across outlets.",
+        "Led visual branding initiatives to enhance store identity and improve overall customer perception."
+      ],
     },
     {
       role: "Head of Event Management",
@@ -73,8 +81,8 @@ const Experience = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
-        <div className="mx-auto max-w-2xl lg:max-w-none">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24 w-full">
+        <div className="w-full">
           <div className="space-y-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -94,7 +102,7 @@ const Experience = () => {
               {experiences.map((exp, idx) => (
                 <motion.div
                   key={idx}
-                  className="group relative flex flex-col items-start border-l-2 border-zinc-200 dark:border-zinc-700 pl-6 pt-2"
+                  className="group relative flex flex-col border-l-2 border-zinc-200 dark:border-zinc-700 pl-6 pt-2 w-full"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.1, duration: 0.5 }}
