@@ -66,13 +66,19 @@ const Home = () => {
                       to="/about"
                       className="inline-flex items-center gap-2 justify-center rounded-lg bg-zinc-900 dark:bg-zinc-100 px-4 py-3 text-sm font-semibold text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-all"
                     >
-                      Learn more
+                      About
                     </Link>
                     <Link
                       to="/projects"
                       className="inline-flex items-center gap-2 justify-center rounded-lg border border-zinc-300 dark:border-zinc-700/50 px-4 py-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-all"
                     >
                       View projects
+                    </Link>
+                    <Link
+                      to="/experience"
+                      className="inline-flex items-center gap-2 justify-center rounded-lg border border-zinc-300 dark:border-zinc-700/50 px-4 py-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-all"
+                    >
+                      Experience
                     </Link>
                   </motion.div>
                 </motion.div>
