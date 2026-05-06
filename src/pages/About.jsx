@@ -66,7 +66,7 @@ const About = () => {
                     pushed the boundaries of what's possible.
                   </p>
                   <p className="text-justify">
-                    Currently, I’m working as a Founder’s Office Intern at FarmBowl, where I work across analytics, operations, automation, strategy, and growth initiatives to help build scalable systems and data-driven workflows.
+                    Currently, I’m working as a Founder’s Office Intern at Farmbowl, where I work across analytics, operations, automation, strategy, and growth initiatives to help build scalable systems and data-driven workflows.
                   </p>
                   <p className="text-justify">
                     Today, I focus on building intelligent solutions that empower startups and businesses
