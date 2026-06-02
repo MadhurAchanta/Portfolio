@@ -9,8 +9,8 @@ const Experience = () => {
       organization: "Farmbowl",
       duration: "Dec 2025 – Present",
       details: [
+        "Built and deployed a production-grade multi-outlet analytics platform to monitor revenue, food cost, and operational KPIs, integrating a RAG- and LangChain-powered AI assistant that transformed complex sales and inventory data into actionable business insights through natural language interactions.",
         "Strategized and implemented cost-control initiatives to reduce food cost by ~600 basis points, directly improving outlet-level profitability.",
-        "Developed and deployed an intelligent sales dashboard to track revenue and food cost across outlets, enabling data-driven decision-making for business performance optimization.",
         "Automated Instagram DMs and comment workflows, reducing manual effort by ~99% and significantly improving response efficiency and lead handling.",
         "Built and deployed an analytics dashboard for item-wise sales and outlet-wise volume comparison, providing visibility into category contribution and helping identify high- and low-performing items across stores.",
         "Standardized data collection by designing structured templates, ensuring consistency and enabling faster, more reliable insight generation.",
