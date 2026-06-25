@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 const Experience = () => {
   const experiences = [
     {
-      role: "Founder's Office Intern",
+      role: "Founder's Office",
       organization: "Farmbowl",
       duration: "Dec 2025 – Present",
       details: [
