@@ -40,7 +40,7 @@ const Home = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="min-h-[calc(100vh-144px)] flex items-center">
           <div className="w-full max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-8 lg:gap-12 items-center">
               {/* Text Content */}
               <div className="order-2 lg:order-1">
                 <motion.div
@@ -49,12 +49,15 @@ const Home = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    Aspiring entrepreneur and AI enthusiast.
+                  <h1
+                    className="font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
+                    style={{ fontSize: 'clamp(1.75rem, 3.8vw, 3.75rem)', lineHeight: '1.15' }}
+                  >
+                    Generalist by role.<br />Deep when it matters.
                   </h1>
                   <p className="mt-4 sm:mt-6 text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl lg:max-w-none mx-auto lg:mx-0">
-                    I'm Madhur Achanta, a B.Tech CSE student passionate about
-                    empowering startups with data-driven solutions in finance and beyond.
+                    I'm Madhur Achanta — Founder's Office Generalist at Farmbowl.
+                    I build the tech and workflows that keep a multi-outlet food business running.
                   </p>
                   <motion.div
                     className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"

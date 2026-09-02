@@ -57,8 +57,8 @@ const About = () => {
                 </h1>
                 <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                   <p className="text-justify">
-                    As a B.Tech CSE student (2022–2026) at Sri Vasavi Engineering College with a 9.41 CGPA,
-                    I blend technology, finance, and entrepreneurship to create impactful solutions.
+                    B.Tech CSE graduate (Sri Vasavi Engineering College, 2022–2026, 9.41 CGPA)
+                    who blends technology, operations, and entrepreneurship to build things that actually work at scale.
                   </p>
                   <p className="text-justify">
                     My journey in technology has been driven by a passion for innovation and problem-solving.
