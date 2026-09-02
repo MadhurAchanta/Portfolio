@@ -5,17 +5,43 @@ import { Helmet } from "react-helmet";
 const Experience = () => {
   const experiences = [
     {
-      role: "Founder's Office",
+      role: "Founder's Office – Generalist",
       organization: "Farmbowl",
-      duration: "Dec 2025 – Present",
-      details: [
-        "Built and deployed a production-grade multi-outlet analytics platform to monitor revenue, food cost, and operational KPIs, integrating a RAG- and LangChain-powered AI assistant that transformed complex sales and inventory data into actionable business insights through natural language interactions.",
-        "Strategized and implemented cost-control initiatives to reduce food cost by ~600 basis points, directly improving outlet-level profitability.",
-        "Automated Instagram DMs and comment workflows, reducing manual effort by ~99% and significantly improving response efficiency and lead handling.",
-        "Built and deployed an analytics dashboard for item-wise sales and outlet-wise volume comparison, providing visibility into category contribution and helping identify high- and low-performing items across stores.",
-        "Standardized data collection by designing structured templates, ensuring consistency and enabling faster, more reliable insight generation.",
-        "Conducted regular store audits to ensure compliance with hygiene standards and SOPs, maintaining operational quality across outlets.",
-        "Led visual branding initiatives to enhance store identity and improve overall customer perception."
+      type: "Full-time",
+      duration: "Dec 2025 – Present · 10 mos",
+      location: "Hyderabad, Telangana, India · On-site",
+      intro: [
+        "Designed, built and deployed Farmbowl's core operations platform — now used daily by 50+ users across 12+ outlets and the central kitchen.",
+        "It replaced an entirely manual chain (collecting indents, consolidating them, preparing the prep, procurement and dispatch sheets by hand, plus packet labelling, wastage, receiving and closing-stock logs) with one connected system that saves the head chef 125+ hours a month (5+ hours every day).",
+      ],
+      sections: [
+        {
+          heading: "WHAT THE PLATFORM RUNS",
+          points: [
+            "Ordering → kitchen prep → procurement → vendor POs → dispatch → receiving, in one flow",
+            "A live inventory ledger that costs every ingredient at its real purchase price",
+            "FSSAI-compliant packet labelling with QR-based batch traceability",
+            "Closing-stock counts, photo-verified wastage, and inter-outlet surplus transfers",
+            "Sales analytics, an automated monthly P&L, and a reconciling manual MIS",
+            "HR, payroll, compliance and fixed-asset records",
+            "Built on React, TypeScript and Supabase/Postgres, deployed on Vercel, with offline-capable mobile capture for field staff",
+          ],
+        },
+      ],
+      auditTrail:
+        "Every order, batch, dispatch, receipt and wastage entry is now captured automatically under 8 role-based access and a full audit trail — moving food cost and accountability from estimates to measured numbers, with a read-only investor and auditor login for full transparency. Currently extending it with a RAG-based AI assistant for plain-English querying of sales, cost and inventory data.",
+      beyondSections: [
+        {
+          heading: "BEYOND THE PLATFORM",
+          points: [
+            "Cut food cost by ~600 basis points through targeted cost-control initiatives",
+            "Automated Instagram DM and comment workflows, reducing manual effort by ~99%",
+            "Built an item-wise and outlet-wise sales dashboard for category and store performance",
+            "Standardized data-collection templates for consistent, faster reporting",
+            "Ran store audits for hygiene and SOP compliance, and led visual branding initiatives",
+            "Drove rollout and training across every outlet, taking the platform from zero to daily use",
+          ],
+        },
       ],
     },
     {
@@ -118,19 +144,71 @@ const Experience = () => {
                   </h3>
 
                   <p className="mt-1 text-base font-medium text-zinc-600 dark:text-zinc-400">
-                    {exp.organization}
+                    {exp.organization}{exp.type ? ` · ${exp.type}` : ""}
                   </p>
 
-                  <ul className="mt-4 space-y-3">
-                    {exp.details.map((detail, i) => (
-                      <li
-                        key={i}
-                        className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"
-                      >
-                        {detail}
-                      </li>
-                    ))}
-                  </ul>
+                  {exp.location && (
+                    <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-500">
+                      {exp.location}
+                    </p>
+                  )}
+
+                  {/* Structured format (Farmbowl-style) */}
+                  {exp.intro ? (
+                    <div className="mt-4 space-y-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                      {exp.intro.map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+
+                      {exp.sections && exp.sections.map((sec, si) => (
+                        <div key={si} className="mt-3">
+                          <p className="font-semibold text-zinc-700 dark:text-zinc-300 uppercase tracking-wide text-xs mb-2">
+                            {sec.heading}
+                          </p>
+                          <ul className="space-y-1.5">
+                            {sec.points.map((pt, pi) => (
+                              <li key={pi} className="flex gap-2">
+                                <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-500" />
+                                <span>{pt}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+
+                      {exp.auditTrail && (
+                        <p className="mt-3">{exp.auditTrail}</p>
+                      )}
+
+                      {exp.beyondSections && exp.beyondSections.map((sec, si) => (
+                        <div key={si} className="mt-3">
+                          <p className="font-semibold text-zinc-700 dark:text-zinc-300 uppercase tracking-wide text-xs mb-2">
+                            {sec.heading}
+                          </p>
+                          <ul className="space-y-1.5">
+                            {sec.points.map((pt, pi) => (
+                              <li key={pi} className="flex gap-2">
+                                <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-500" />
+                                <span>{pt}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    /* Legacy simple details list */
+                    <ul className="mt-4 space-y-3">
+                      {exp.details.map((detail, i) => (
+                        <li
+                          key={i}
+                          className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"
+                        >
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </motion.div>
               ))}
             </div>
